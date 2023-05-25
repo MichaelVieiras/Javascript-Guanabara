@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <script>
+        var nome = window.prompt('Qual é seu nome?');
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.<br>`);
+        document.write(`Seu nome em maiúsculas é ${nome.toLocaleUpperCase()} <br>`);
+        document.write(`Seu nome em minúsculas é ${nome.toLocaleLowerCase()} <br>`);
+    </script>
+    -->
+    <script>
+        var n1 = 1545.5
+        console.log(n1)
+        console.log(n1.toFixed(2)) // definir as casas decimais
+        console.log(n1.toFixed(2).replace('.', ',')) // trocar o ponto (.) por virgula (,)
+        console.log(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+        console.log(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}))
+        console.log(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}))
+    </script>
+</body>
+</html>

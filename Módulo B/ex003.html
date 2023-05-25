@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: rgb(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    
+    <script>
+        // Conversão de dados string para number (Number.parseInt(n) | Number.parseFloat(n) | Number(n))
+        // Conversão de dados number para string (n.toString | String(n))
+        var n1 = Number(window.prompt('Digite um número: ')); // String
+        var n2 = Number(window.prompt('Digite outro número: ')); // String
+        var s = n1 + n2;
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); // Concatenação
+        // + (number + number)  para adição
+        // + (string + string) para concatenação
+    </script>
+    
+    <script>
+        var nome = 'Michael';
+        var idade = 26;
+        var nota = 5.5;
+        console.log('O nome o aluno é nome') // não faz interpolação
+        console.log('O aluno ' + nome + ' com ' + idade + ' anos tirou a nota ' + nota); // usa concatenação
+        console.log(`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`); // usa template string
+        
+        nome.length; // quantos caracteres a string tem
+        nome.toUpperCase(); // tudo para 'MAIÚSCULAS'
+        nome.toLowerCase(); // tudo para 'minúsculas'
+    </script>
+</body>
+</html>
